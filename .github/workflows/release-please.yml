@@ -1,4 +1,5 @@
-﻿name: release-please.yml
+﻿name: Release please create release and tags
+
 on:
   push:
     branches: [ "main" ]
