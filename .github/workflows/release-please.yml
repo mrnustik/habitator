@@ -1,0 +1,17 @@
+﻿name: release-please.yml
+on:
+  push:
+    branches: [ "main" ]
+    
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+          skip-github-pull-request: true
+          include-component-in-tag: true
