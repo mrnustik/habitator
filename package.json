@@ -1,0 +1,24 @@
+{
+  "name": "habitator",
+  "version": "0.0.1",
+  "description": "Habits Tracker for Todoist",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrnustik/habitator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrnustik/habitator/issues"
+  },
+  "homepage": "https://github.com/mrnustik/habitator#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "husky": "^9.1.7"
+  }
+}
