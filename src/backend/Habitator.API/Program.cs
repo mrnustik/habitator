@@ -14,6 +14,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapGet("/", () => TypedResults.Ok());
 app.MapHealthChecks("/health");
 app.MapHealthChecks("/health/alive", new HealthCheckOptions
 {
