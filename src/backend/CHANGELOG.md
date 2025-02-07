@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/mrnustik/habitator/compare/v0.1.3...v0.2.0) (2025-02-07)
+
+
+### Features
+
+* **api:** add hello world API endpoint ([2decbcf](https://github.com/mrnustik/habitator/commit/2decbcfd028663d1d9eafc485065a689ef138520))
+
 ## [0.1.3](https://github.com/mrnustik/habitator/compare/v0.1.2...v0.1.3) (2025-02-05)
 
 
