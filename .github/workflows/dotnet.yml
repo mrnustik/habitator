@@ -47,4 +47,5 @@ jobs:
       - name: Print release outputs 
         continue-on-error: true 
         run: |
-          echo "Release outputs:" echo "${{ toJson(steps.release.outputs) }}"
+          echo "Release outputs:" 
+          echo "${{ toJson(steps.release.outputs) }}"
