@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/mrnustik/habitator/compare/v0.2.0...v0.2.1) (2025-02-08)
+
+
+### Features
+
+* update swashbuckle to latest version ([58c646f](https://github.com/mrnustik/habitator/commit/58c646f2ddf521db1c78b26e90c55deb2af5c310))
+
 ## [0.2.0](https://github.com/mrnustik/habitator/compare/v0.1.3...v0.2.0) (2025-02-08)
 
 
