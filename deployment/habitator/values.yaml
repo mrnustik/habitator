@@ -1,0 +1,4 @@
+replicaCount: 1
+backend:
+  repository: mrnustik/habitator-api
+  tag: 0.2.1

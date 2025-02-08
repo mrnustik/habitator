@@ -1,0 +1,29 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: habitator-api
+  labels:
+    app: habitator
+    name: habitator-api
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: habitator
+      name: habitator-api
+  template:
+    metadata:
+      name: habitator-api
+      labels:
+        app: habitator
+        name: habitator-api
+    spec:
+      containers:
+        - name: habitator-api
+          image: {{ .Values.backend.repository }}:{{ .Values.backend.tag }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+      restartPolicy: Always
+      
