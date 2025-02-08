@@ -10,7 +10,7 @@
         {
           "path": "deployment/values.yaml",
           "type": "yaml",
-          "jsonpath": "$.image.tag"
+          "jsonpath": "$.backend.tag"
         }
       ]
     }
