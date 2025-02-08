@@ -2,6 +2,8 @@ replicaCount: 1
 backend:
   repository: mrnustik/habitator-api
   tag: 0.2.1
+  otel-collector-endpoint: "http://habitator-alloy:4317"
+  
 alloy:
   alloy:
     extraPorts:

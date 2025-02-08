@@ -34,5 +34,8 @@ spec:
             httpGet:
               port: http
               path: /health
+          env:
+            - name: OTLP_ENDPOINT_URL
+              value: {{ .Values.backend.otel-collector-endpoint }}
       restartPolicy: Always
       
