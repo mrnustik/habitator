@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/mrnustik/habitator/compare/v0.2.1...v0.2.2) (2025-02-08)
+
+
+### Features
+
+* add OpenTelemetry exporting from the Habitator.API ([adcacdc](https://github.com/mrnustik/habitator/commit/adcacdc80cb03a0093781a8a684b61c33314e667))
+
 ## [0.2.1](https://github.com/mrnustik/habitator/compare/v0.2.0...v0.2.1) (2025-02-08)
 
 
