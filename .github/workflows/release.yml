@@ -27,7 +27,7 @@ jobs:
        
   publish-backend-docker-image:
     runs-on: ubuntu-latest
-    if: jobs.id.release.outputs.backend--release-created == 'true'
+    if: needs.release.outputs.backend--release-created == 'true'
     needs: release
     steps:
       - uses: actions/checkout@v4
