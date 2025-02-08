@@ -24,6 +24,15 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+              name: http
               protocol: TCP
+          livenessProbe:
+            httpGet:
+              port: http
+              path: /health/alive
+          readinessProbe:
+            httpGet:
+              port: http
+              path: /health
       restartPolicy: Always
       
