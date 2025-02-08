@@ -1,4 +1,4 @@
-﻿name: Release please create release and tags
+﻿name: Release
 
 on:
   push:
@@ -11,8 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
-          skip-github-pull-request: true
           include-component-in-tag: true
+      - run: 
+          echo ${{ toJSON(steps.release.outputs) }}
