@@ -58,7 +58,7 @@ jobs:
         with:
           valueFile: 'deployment/habitator/values.yaml'
           propertyPath: 'backend.tag'
-          value: ${{ needs.release.outputs.backend--version }}
+          value: v${{ needs.release.outputs.backend--version }}
           commitChange: true
           branch: 'main'
           message: "chore: deploy backend v${{ needs.release.outputs.backend--version }}"
