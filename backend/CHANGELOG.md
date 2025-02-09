@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/mrnustik/habitator/compare/v0.2.1...v0.2.2) (2025-02-09)
+
+
+### Features
+
+* add OpenTelemetry exporting from the Habitator.API ([adcacdc](https://github.com/mrnustik/habitator/commit/adcacdc80cb03a0093781a8a684b61c33314e667))
+
+
+### Bug Fixes
+
+* fix invalid repository mapping ([93ac557](https://github.com/mrnustik/habitator/commit/93ac55775c1f7e8e220d82df885e3ad9ece83fae))
+
 ## [0.2.1](https://github.com/mrnustik/habitator/compare/v0.2.0...v0.2.1) (2025-02-08)
 
 
