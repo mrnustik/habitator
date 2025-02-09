@@ -26,8 +26,8 @@ jobs:
         continue-on-error: true
        
   publish-backend-docker-image:
-    runs-on: ubuntu-latest
     if: needs.release.outputs.backend--release-created == 'true'
+    runs-on: ubuntu-latest
     needs: release
     steps:
       - uses: actions/checkout@v4
@@ -56,3 +56,12 @@ jobs:
           tags: mrnustik/habitator-api:v${{ needs.release.outputs.backend--version }}
           provenance: true
           sbom: true
+      - name: Update api version
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'deployment/habitator/values.yaml'
+          propertyPath: 'backend.tag'
+          value: ${{ needs.release.outputs.backend--version }}
+          commitChange: true
+          branch: 'main'
+          message: "chore: deploy backend v${{ needs.release.outputs.backend--version }}"
