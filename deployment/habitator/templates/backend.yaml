@@ -36,6 +36,6 @@ spec:
               path: /health
           env:
             - name: OTLP_ENDPOINT_URL
-              value: {{ .Values.backend.otel-collector-endpoint }}
+              value: {{ .Values.backend.otelCollectorEndpoint }}
       restartPolicy: Always
       
